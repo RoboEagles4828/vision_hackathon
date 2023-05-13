@@ -1,0 +1,7 @@
+train: /home/prat/Documents/markerdataset/images/train
+val: /home/prat/Documents/markerdataset/images/val
+test: /home/prat/Documents/markerdataset/images/test
+
+nc: 1
+
+names: ["expo marker"]

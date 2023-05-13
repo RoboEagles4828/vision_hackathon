@@ -1,0 +1,106 @@
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Focus                     [3, 32, 3]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  3    156928  models.common.C3                        [128, 128, 3]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1    656896  models.common.SPP                       [512, 512, [5, 9, 13]]
+  9                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24      [17, 20, 23]  1     16182  models.yolo.Detect                      [1, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+weights summary: 225 layers, 7063542 parameters, 7063542 gradients
+Transferred 308/361 items from yolov5s.pt
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1moptimizer:[39m[22m SGD(lr=0.01) with parameter groups 59 weight(decay=0.0), 62 weight(decay=0.0005), 62 bias
+[34m[1mtrain: [39m[22mScanning /home/prat/Documents/markerdataset/labels/train... 11 images, 0 backgrounds, 0 corrupt: 100%|██████████| 11/11 [00:00<00:00, 3289.42it/s]
+[34m[1mtrain: [39m[22mNew cache created: /home/prat/Documents/markerdataset/labels/train.cache
+[34m[1mval: [39m[22mScanning /home/prat/Documents/markerdataset/labels/val... 4 images, 0 backgrounds, 0 corrupt: 100%|██████████| 4/4 [00:00<00:00, 1287.88it/s]
+[34m[1mval: [39m[22mNew cache created: /home/prat/Documents/markerdataset/labels/val.cache
+[34m[1mAutoAnchor: [39m[22m4.13 anchors/target, 1.000 Best Possible Recall (BPR). Current anchors are a good fit to dataset ✅
+Plotting labels to yolov5/runs/train/yolo_marker_det11/labels.jpg...
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1myolov5/runs/train/yolo_marker_det11
+Starting training for 100 epochs...
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+  0%|          | 0/2 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/prat/Documents/yolov5/train.py", line 642, in <module>
+    main(opt)
+  File "/home/prat/Documents/yolov5/train.py", line 531, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "/home/prat/Documents/yolov5/train.py", line 286, in train
+    for i, (imgs, targets, paths, _) in pbar:  # batch -------------------------------------------------------------
+  File "/home/prat/.local/lib/python3.10/site-packages/tqdm/std.py", line 1178, in __iter__
+    for obj in iterable:
+  File "/home/prat/Documents/yolov5/utils/dataloaders.py", line 172, in __iter__
+    yield next(self.iterator)
+  File "/home/prat/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/prat/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+  File "/home/prat/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "/home/prat/.local/lib/python3.10/site-packages/torch/_utils.py", line 644, in reraise
+    raise exception
+KeyError: Caught KeyError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/prat/.local/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/prat/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/prat/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/prat/Documents/yolov5/utils/dataloaders.py", line 661, in __getitem__
+    img, labels = self.load_mosaic(index)
+  File "/home/prat/Documents/yolov5/utils/dataloaders.py", line 796, in load_mosaic
+    img4, labels4, segments4 = copy_paste(img4, labels4, segments4, p=self.hyp['copy_paste'])
+KeyError: 'copy_paste'
+Traceback (most recent call last):
+  File "/home/prat/Documents/yolov5/train.py", line 642, in <module>
+    main(opt)
+  File "/home/prat/Documents/yolov5/train.py", line 531, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "/home/prat/Documents/yolov5/train.py", line 286, in train
+    for i, (imgs, targets, paths, _) in pbar:  # batch -------------------------------------------------------------
+  File "/home/prat/.local/lib/python3.10/site-packages/tqdm/std.py", line 1178, in __iter__
+    for obj in iterable:
+  File "/home/prat/Documents/yolov5/utils/dataloaders.py", line 172, in __iter__
+    yield next(self.iterator)
+  File "/home/prat/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/prat/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+  File "/home/prat/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "/home/prat/.local/lib/python3.10/site-packages/torch/_utils.py", line 644, in reraise
+    raise exception
+KeyError: Caught KeyError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/prat/.local/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/prat/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/prat/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/prat/Documents/yolov5/utils/dataloaders.py", line 661, in __getitem__
+    img, labels = self.load_mosaic(index)
+  File "/home/prat/Documents/yolov5/utils/dataloaders.py", line 796, in load_mosaic
+    img4, labels4, segments4 = copy_paste(img4, labels4, segments4, p=self.hyp['copy_paste'])
+KeyError: 'copy_paste'

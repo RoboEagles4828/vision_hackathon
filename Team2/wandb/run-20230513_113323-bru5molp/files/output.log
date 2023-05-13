@@ -1,0 +1,21 @@
+Dataset not found ⚠️, missing paths ['/markerdataset/images/val']
+Traceback (most recent call last):
+  File "/home/prat/Documents/yolov5/train.py", line 642, in <module>
+    main(opt)
+  File "/home/prat/Documents/yolov5/train.py", line 531, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "/home/prat/Documents/yolov5/train.py", line 112, in train
+    data_dict = data_dict or check_dataset(data)  # check if None
+  File "/home/prat/Documents/yolov5/utils/general.py", line 567, in check_dataset
+    raise Exception('Dataset not found ❌')
+Exception: Dataset not found ❌
+Traceback (most recent call last):
+  File "/home/prat/Documents/yolov5/train.py", line 642, in <module>
+    main(opt)
+  File "/home/prat/Documents/yolov5/train.py", line 531, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "/home/prat/Documents/yolov5/train.py", line 112, in train
+    data_dict = data_dict or check_dataset(data)  # check if None
+  File "/home/prat/Documents/yolov5/utils/general.py", line 567, in check_dataset
+    raise Exception('Dataset not found ❌')
+Exception: Dataset not found ❌

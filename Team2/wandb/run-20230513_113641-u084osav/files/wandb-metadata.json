@@ -1,0 +1,138 @@
+{
+    "os": "Linux-5.19.0-38-generic-x86_64-with-glibc2.35",
+    "python": "3.10.6",
+    "heartbeatAt": "2023-05-13T15:36:42.923143",
+    "startedAt": "2023-05-13T15:36:41.908645",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--img",
+        "19",
+        "--cfg",
+        "weights.yaml",
+        "--hyp",
+        "hyp.scratch.yaml",
+        "--batch",
+        "8",
+        "--epochs",
+        "100",
+        "--data",
+        "expo_marker.yaml",
+        "--weights",
+        "yolov5s.pt",
+        "--workers",
+        "24",
+        "--name",
+        "yolo_marker_det"
+    ],
+    "state": "running",
+    "program": "/home/prat/Documents/yolov5/train.py",
+    "codePath": "yolov5/train.py",
+    "host": "prat-OMEN-by-HP-Laptop-16-b0xxx",
+    "username": "prat",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 1554.4813125000003,
+        "min": 800.0,
+        "max": 4600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 853.412,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2300.0,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1153.677,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1164.961,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 806.413,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1383.748,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2300.0,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1092.737,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2300.0,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1061.1,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2300.0,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1454.666,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1485.45,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2300.0,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1463.583,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1451.954,
+            "min": 800.0,
+            "max": 4600.0
+        }
+    ],
+    "disk": {
+        "total": 296.72021102905273,
+        "used": 132.86771774291992
+    },
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 15.271240234375
+    }
+}

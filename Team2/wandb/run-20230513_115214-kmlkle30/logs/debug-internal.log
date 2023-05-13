@@ -1,0 +1,179 @@
+2023-05-13 11:52:14,835 INFO    StreamThr :49470 [internal.py:wandb_internal():87] W&B internal server running at pid: 49470, started at: 2023-05-13 11:52:14.835653
+2023-05-13 11:52:14,837 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: status
+2023-05-13 11:52:14,839 INFO    WriterThread:49470 [datastore.py:open_for_write():85] open: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/run-kmlkle30.wandb
+2023-05-13 11:52:14,840 DEBUG   SenderThread:49470 [sender.py:send():336] send: header
+2023-05-13 11:52:14,840 DEBUG   SenderThread:49470 [sender.py:send():336] send: run
+2023-05-13 11:52:14,845 INFO    SenderThread:49470 [sender.py:_maybe_setup_resume():722] checking resume status for None/train/kmlkle30
+2023-05-13 11:52:15,392 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: check_version
+2023-05-13 11:52:15,393 INFO    SenderThread:49470 [dir_watcher.py:__init__():219] watching files in: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files
+2023-05-13 11:52:15,393 INFO    SenderThread:49470 [sender.py:_start_run_threads():1078] run started: kmlkle30 with start time 1683993134.833416
+2023-05-13 11:52:15,393 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: summary_record
+2023-05-13 11:52:15,393 INFO    SenderThread:49470 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-05-13 11:52:15,393 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: check_version
+2023-05-13 11:52:15,600 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: run_start
+2023-05-13 11:52:15,604 DEBUG   HandlerThread:49470 [system_info.py:__init__():31] System info init
+2023-05-13 11:52:15,604 DEBUG   HandlerThread:49470 [system_info.py:__init__():46] System info init done
+2023-05-13 11:52:15,604 INFO    HandlerThread:49470 [system_monitor.py:start():183] Starting system monitor
+2023-05-13 11:52:15,604 INFO    SystemMonitor:49470 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-05-13 11:52:15,604 INFO    HandlerThread:49470 [system_monitor.py:probe():204] Collecting system info
+2023-05-13 11:52:15,605 INFO    SystemMonitor:49470 [interfaces.py:start():187] Started cpu monitoring
+2023-05-13 11:52:15,605 INFO    SystemMonitor:49470 [interfaces.py:start():187] Started disk monitoring
+2023-05-13 11:52:15,605 INFO    SystemMonitor:49470 [interfaces.py:start():187] Started gpu monitoring
+2023-05-13 11:52:15,606 INFO    SystemMonitor:49470 [interfaces.py:start():187] Started memory monitoring
+2023-05-13 11:52:15,606 INFO    SystemMonitor:49470 [interfaces.py:start():187] Started network monitoring
+2023-05-13 11:52:15,615 DEBUG   HandlerThread:49470 [system_info.py:probe():195] Probing system
+2023-05-13 11:52:15,616 DEBUG   HandlerThread:49470 [git.py:repo():40] git repository is invalid
+2023-05-13 11:52:15,616 DEBUG   HandlerThread:49470 [system_info.py:probe():240] Probing system done
+2023-05-13 11:52:15,616 DEBUG   HandlerThread:49470 [system_monitor.py:probe():213] {'os': 'Linux-5.19.0-38-generic-x86_64-with-glibc2.35', 'python': '3.10.6', 'heartbeatAt': '2023-05-13T15:52:15.615444', 'startedAt': '2023-05-13T15:52:14.830145', 'docker': None, 'cuda': None, 'args': ('--img', '640', '--cfg', 'weights.yaml', '--hyp', 'hyp.scratch.yaml', '--batch', '8', '--epochs', '100', '--data', 'expo_marker.yaml', '--weights', 'yolov5s.pt', '--workers', '24', '--name', 'yolo_marker_det'), 'state': 'running', 'program': '/home/prat/Documents/yolov5/train.py', 'codePath': 'yolov5/train.py', 'host': 'prat-OMEN-by-HP-Laptop-16-b0xxx', 'username': 'prat', 'executable': '/usr/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2502.7986250000004, 'min': 800.0, 'max': 4600.0}, 'cpu_freq_per_core': [{'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 3431.635, 'min': 800.0, 'max': 4600.0}, {'current': 2146.568, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 4454.743, 'min': 800.0, 'max': 4600.0}, {'current': 2033.618, 'min': 800.0, 'max': 4600.0}, {'current': 2300.0, 'min': 800.0, 'max': 4600.0}, {'current': 3596.652, 'min': 800.0, 'max': 4600.0}, {'current': 2288.118, 'min': 800.0, 'max': 4600.0}, {'current': 3687.907, 'min': 800.0, 'max': 4600.0}, {'current': 783.94, 'min': 800.0, 'max': 4600.0}, {'current': 1008.585, 'min': 800.0, 'max': 4600.0}, {'current': 4324.308, 'min': 800.0, 'max': 4600.0}], 'disk': {'total': 296.72021102905273, 'used': 132.88599014282227}, 'gpu': 'NVIDIA GeForce RTX 3070 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3070 Laptop GPU', 'memory_total': 8589934592}], 'memory': {'total': 15.271240234375}}
+2023-05-13 11:52:15,616 INFO    HandlerThread:49470 [system_monitor.py:probe():214] Finished collecting system info
+2023-05-13 11:52:15,616 INFO    HandlerThread:49470 [system_monitor.py:probe():217] Publishing system info
+2023-05-13 11:52:15,616 DEBUG   HandlerThread:49470 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-05-13 11:52:15,616 DEBUG   HandlerThread:49470 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-13 11:52:15,616 INFO    HandlerThread:49470 [system_monitor.py:probe():219] Finished publishing system info
+2023-05-13 11:52:15,619 DEBUG   SenderThread:49470 [sender.py:send():336] send: files
+2023-05-13 11:52:15,619 INFO    SenderThread:49470 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-05-13 11:52:15,624 DEBUG   SenderThread:49470 [sender.py:send():336] send: telemetry
+2023-05-13 11:52:15,665 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-13 11:52:15,666 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: stop_status
+2023-05-13 11:52:16,259 INFO    wandb-upload_0:49470 [upload_job.py:push():138] Uploaded file /tmp/tmphzlrqcm2wandb/opdyh29x-wandb-metadata.json
+2023-05-13 11:52:16,394 INFO    Thread-13 :49470 [dir_watcher.py:_on_file_created():278] file/dir created: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/output.log
+2023-05-13 11:52:16,394 INFO    Thread-13 :49470 [dir_watcher.py:_on_file_created():278] file/dir created: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/wandb-metadata.json
+2023-05-13 11:52:16,394 INFO    Thread-13 :49470 [dir_watcher.py:_on_file_created():278] file/dir created: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/requirements.txt
+2023-05-13 11:52:16,394 INFO    Thread-13 :49470 [dir_watcher.py:_on_file_created():278] file/dir created: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/wandb-summary.json
+2023-05-13 11:52:18,394 INFO    Thread-13 :49470 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/output.log
+2023-05-13 11:52:20,053 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 11:52:20,394 INFO    Thread-13 :49470 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/output.log
+2023-05-13 11:52:22,395 INFO    Thread-13 :49470 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/output.log
+2023-05-13 11:52:22,428 DEBUG   SenderThread:49470 [sender.py:send():336] send: exit
+2023-05-13 11:52:22,428 INFO    SenderThread:49470 [sender.py:send_exit():559] handling exit code: 1
+2023-05-13 11:52:22,428 INFO    SenderThread:49470 [sender.py:send_exit():561] handling runtime: 6
+2023-05-13 11:52:22,428 INFO    SenderThread:49470 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-05-13 11:52:22,428 INFO    SenderThread:49470 [sender.py:send_exit():567] send defer
+2023-05-13 11:52:22,429 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 11:52:22,429 INFO    HandlerThread:49470 [handler.py:handle_request_defer():170] handle defer: 0
+2023-05-13 11:52:22,429 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: defer
+2023-05-13 11:52:22,429 INFO    SenderThread:49470 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-05-13 11:52:22,429 INFO    SenderThread:49470 [sender.py:transition_state():587] send defer: 1
+2023-05-13 11:52:22,429 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 11:52:22,429 INFO    HandlerThread:49470 [handler.py:handle_request_defer():170] handle defer: 1
+2023-05-13 11:52:22,429 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: defer
+2023-05-13 11:52:22,429 INFO    SenderThread:49470 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-05-13 11:52:22,429 INFO    SenderThread:49470 [sender.py:transition_state():587] send defer: 2
+2023-05-13 11:52:22,429 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 11:52:22,429 INFO    HandlerThread:49470 [handler.py:handle_request_defer():170] handle defer: 2
+2023-05-13 11:52:22,429 INFO    HandlerThread:49470 [system_monitor.py:finish():193] Stopping system monitor
+2023-05-13 11:52:22,429 DEBUG   SystemMonitor:49470 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-05-13 11:52:22,429 DEBUG   SystemMonitor:49470 [system_monitor.py:_start():168] Finished system metrics aggregation loop
+2023-05-13 11:52:22,429 DEBUG   SystemMonitor:49470 [system_monitor.py:_start():172] Publishing last batch of metrics
+2023-05-13 11:52:22,430 INFO    HandlerThread:49470 [interfaces.py:finish():199] Joined cpu monitor
+2023-05-13 11:52:22,430 INFO    HandlerThread:49470 [interfaces.py:finish():199] Joined disk monitor
+2023-05-13 11:52:22,460 INFO    HandlerThread:49470 [interfaces.py:finish():199] Joined gpu monitor
+2023-05-13 11:52:22,460 INFO    HandlerThread:49470 [interfaces.py:finish():199] Joined memory monitor
+2023-05-13 11:52:22,460 INFO    HandlerThread:49470 [interfaces.py:finish():199] Joined network monitor
+2023-05-13 11:52:22,461 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: defer
+2023-05-13 11:52:22,461 INFO    SenderThread:49470 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-05-13 11:52:22,461 INFO    SenderThread:49470 [sender.py:transition_state():587] send defer: 3
+2023-05-13 11:52:22,461 DEBUG   SenderThread:49470 [sender.py:send():336] send: stats
+2023-05-13 11:52:22,461 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 11:52:22,461 INFO    HandlerThread:49470 [handler.py:handle_request_defer():170] handle defer: 3
+2023-05-13 11:52:22,461 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: defer
+2023-05-13 11:52:22,462 INFO    SenderThread:49470 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-05-13 11:52:22,462 INFO    SenderThread:49470 [sender.py:transition_state():587] send defer: 4
+2023-05-13 11:52:22,462 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 11:52:22,462 INFO    HandlerThread:49470 [handler.py:handle_request_defer():170] handle defer: 4
+2023-05-13 11:52:22,462 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: defer
+2023-05-13 11:52:22,462 INFO    SenderThread:49470 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-05-13 11:52:22,462 INFO    SenderThread:49470 [sender.py:transition_state():587] send defer: 5
+2023-05-13 11:52:22,462 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 11:52:22,462 INFO    HandlerThread:49470 [handler.py:handle_request_defer():170] handle defer: 5
+2023-05-13 11:52:22,462 DEBUG   SenderThread:49470 [sender.py:send():336] send: summary
+2023-05-13 11:52:22,463 INFO    SenderThread:49470 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-05-13 11:52:22,463 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: defer
+2023-05-13 11:52:22,463 INFO    SenderThread:49470 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-05-13 11:52:22,463 INFO    SenderThread:49470 [sender.py:transition_state():587] send defer: 6
+2023-05-13 11:52:22,463 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 11:52:22,463 INFO    HandlerThread:49470 [handler.py:handle_request_defer():170] handle defer: 6
+2023-05-13 11:52:22,463 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: defer
+2023-05-13 11:52:22,463 INFO    SenderThread:49470 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-05-13 11:52:22,465 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: status_report
+2023-05-13 11:52:22,672 INFO    SenderThread:49470 [sender.py:transition_state():587] send defer: 7
+2023-05-13 11:52:22,672 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 11:52:22,673 INFO    HandlerThread:49470 [handler.py:handle_request_defer():170] handle defer: 7
+2023-05-13 11:52:22,673 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: defer
+2023-05-13 11:52:22,673 INFO    SenderThread:49470 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-05-13 11:52:23,396 INFO    Thread-13 :49470 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/config.yaml
+2023-05-13 11:52:23,396 INFO    Thread-13 :49470 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/wandb-summary.json
+2023-05-13 11:52:23,429 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-13 11:52:23,871 INFO    SenderThread:49470 [sender.py:transition_state():587] send defer: 8
+2023-05-13 11:52:23,871 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: poll_exit
+2023-05-13 11:52:23,871 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 11:52:23,871 INFO    HandlerThread:49470 [handler.py:handle_request_defer():170] handle defer: 8
+2023-05-13 11:52:23,872 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: defer
+2023-05-13 11:52:23,872 INFO    SenderThread:49470 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-05-13 11:52:23,872 INFO    SenderThread:49470 [sender.py:transition_state():587] send defer: 9
+2023-05-13 11:52:23,872 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 11:52:23,872 INFO    HandlerThread:49470 [handler.py:handle_request_defer():170] handle defer: 9
+2023-05-13 11:52:23,872 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: defer
+2023-05-13 11:52:23,872 INFO    SenderThread:49470 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-05-13 11:52:23,872 INFO    SenderThread:49470 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-05-13 11:52:24,397 INFO    Thread-13 :49470 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/output.log
+2023-05-13 11:52:24,398 INFO    SenderThread:49470 [dir_watcher.py:finish():395] scan: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files
+2023-05-13 11:52:24,398 INFO    SenderThread:49470 [dir_watcher.py:finish():409] scan save: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/wandb-summary.json wandb-summary.json
+2023-05-13 11:52:24,399 INFO    SenderThread:49470 [dir_watcher.py:finish():409] scan save: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/wandb-metadata.json wandb-metadata.json
+2023-05-13 11:52:24,399 INFO    SenderThread:49470 [dir_watcher.py:finish():409] scan save: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/requirements.txt requirements.txt
+2023-05-13 11:52:24,399 INFO    SenderThread:49470 [dir_watcher.py:finish():409] scan save: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/config.yaml config.yaml
+2023-05-13 11:52:24,400 INFO    SenderThread:49470 [dir_watcher.py:finish():409] scan save: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/output.log output.log
+2023-05-13 11:52:24,400 INFO    SenderThread:49470 [sender.py:transition_state():587] send defer: 10
+2023-05-13 11:52:24,407 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 11:52:24,407 INFO    HandlerThread:49470 [handler.py:handle_request_defer():170] handle defer: 10
+2023-05-13 11:52:24,409 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: defer
+2023-05-13 11:52:24,409 INFO    SenderThread:49470 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-05-13 11:52:24,410 INFO    SenderThread:49470 [file_pusher.py:finish():164] shutting down file pusher
+2023-05-13 11:52:24,431 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-13 11:52:24,432 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: poll_exit
+2023-05-13 11:52:25,050 INFO    wandb-upload_1:49470 [upload_job.py:push():138] Uploaded file /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/wandb-summary.json
+2023-05-13 11:52:25,272 INFO    wandb-upload_2:49470 [upload_job.py:push():138] Uploaded file /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/config.yaml
+2023-05-13 11:52:25,274 INFO    wandb-upload_3:49470 [upload_job.py:push():138] Uploaded file /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/output.log
+2023-05-13 11:52:25,275 INFO    wandb-upload_0:49470 [upload_job.py:push():138] Uploaded file /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/files/requirements.txt
+2023-05-13 11:52:25,431 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-13 11:52:25,432 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: poll_exit
+2023-05-13 11:52:25,476 INFO    Thread-12 (_thread_body):49470 [sender.py:transition_state():587] send defer: 11
+2023-05-13 11:52:25,477 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 11:52:25,477 INFO    HandlerThread:49470 [handler.py:handle_request_defer():170] handle defer: 11
+2023-05-13 11:52:25,477 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: defer
+2023-05-13 11:52:25,478 INFO    SenderThread:49470 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-05-13 11:52:25,478 INFO    SenderThread:49470 [file_pusher.py:join():169] waiting for file pusher
+2023-05-13 11:52:25,478 INFO    SenderThread:49470 [sender.py:transition_state():587] send defer: 12
+2023-05-13 11:52:25,478 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 11:52:25,478 INFO    HandlerThread:49470 [handler.py:handle_request_defer():170] handle defer: 12
+2023-05-13 11:52:25,479 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: defer
+2023-05-13 11:52:25,479 INFO    SenderThread:49470 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-05-13 11:52:25,585 INFO    SenderThread:49470 [sender.py:transition_state():587] send defer: 13
+2023-05-13 11:52:25,586 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 11:52:25,586 INFO    HandlerThread:49470 [handler.py:handle_request_defer():170] handle defer: 13
+2023-05-13 11:52:25,586 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: defer
+2023-05-13 11:52:25,587 INFO    SenderThread:49470 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-05-13 11:52:25,587 INFO    SenderThread:49470 [sender.py:transition_state():587] send defer: 14
+2023-05-13 11:52:25,587 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: defer
+2023-05-13 11:52:25,587 INFO    HandlerThread:49470 [handler.py:handle_request_defer():170] handle defer: 14
+2023-05-13 11:52:25,588 DEBUG   SenderThread:49470 [sender.py:send():336] send: final
+2023-05-13 11:52:25,588 DEBUG   SenderThread:49470 [sender.py:send():336] send: footer
+2023-05-13 11:52:25,589 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: defer
+2023-05-13 11:52:25,589 INFO    SenderThread:49470 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-05-13 11:52:25,590 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-13 11:52:25,591 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-13 11:52:25,591 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: server_info
+2023-05-13 11:52:25,591 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: get_summary
+2023-05-13 11:52:25,592 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: poll_exit
+2023-05-13 11:52:25,592 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: sampled_history
+2023-05-13 11:52:25,593 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: poll_exit
+2023-05-13 11:52:25,594 DEBUG   SenderThread:49470 [sender.py:send_request():363] send_request: server_info
+2023-05-13 11:52:25,936 INFO    MainThread:49470 [wandb_run.py:_footer_history_summary_info():3422] rendering history
+2023-05-13 11:52:25,936 INFO    MainThread:49470 [wandb_run.py:_footer_history_summary_info():3454] rendering summary
+2023-05-13 11:52:25,936 INFO    MainThread:49470 [wandb_run.py:_footer_sync_info():3380] logging synced files
+2023-05-13 11:52:25,937 DEBUG   HandlerThread:49470 [handler.py:handle_request():144] handle_request: shutdown
+2023-05-13 11:52:25,937 INFO    HandlerThread:49470 [handler.py:finish():842] shutting down handler
+2023-05-13 11:52:26,592 INFO    WriterThread:49470 [datastore.py:close():298] close: /home/prat/Documents/wandb/run-20230513_115214-kmlkle30/run-kmlkle30.wandb
+2023-05-13 11:52:26,936 INFO    SenderThread:49470 [sender.py:finish():1504] shutting down sender
+2023-05-13 11:52:26,936 INFO    SenderThread:49470 [file_pusher.py:finish():164] shutting down file pusher
+2023-05-13 11:52:26,936 INFO    SenderThread:49470 [file_pusher.py:join():169] waiting for file pusher
