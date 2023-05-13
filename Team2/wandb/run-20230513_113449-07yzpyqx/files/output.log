@@ -1,0 +1,24 @@
+Downloading https://ultralytics.com/assets/Arial.ttf to /home/prat/.config/Ultralytics/Arial.ttf...
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 755k/755k [00:00<00:00, 5.35MB/s]
+Downloading https://github.com/ultralytics/yolov5/releases/download/v7.0/yolov5s.pt to yolov5s.pt...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 14.1M/14.1M [00:01<00:00, 9.48MB/s]
+Traceback (most recent call last):
+  File "/home/prat/Documents/yolov5/train.py", line 642, in <module>
+    main(opt)
+  File "/home/prat/Documents/yolov5/train.py", line 531, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "/home/prat/Documents/yolov5/train.py", line 125, in train
+    model = Model(cfg or ckpt['model'].yaml, ch=3, nc=nc, anchors=hyp.get('anchors')).to(device)  # create
+  File "/home/prat/Documents/yolov5/models/yolo.py", line 179, in __init__
+    if nc and nc != self.yaml['nc']:
+KeyError: 'nc'
+Traceback (most recent call last):
+  File "/home/prat/Documents/yolov5/train.py", line 642, in <module>
+    main(opt)
+  File "/home/prat/Documents/yolov5/train.py", line 531, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "/home/prat/Documents/yolov5/train.py", line 125, in train
+    model = Model(cfg or ckpt['model'].yaml, ch=3, nc=nc, anchors=hyp.get('anchors')).to(device)  # create
+  File "/home/prat/Documents/yolov5/models/yolo.py", line 179, in __init__
+    if nc and nc != self.yaml['nc']:
+KeyError: 'nc'
